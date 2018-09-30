@@ -13,7 +13,7 @@ Using IPv4 udp broadcasts this package can adverstise and discover your services
 
 This package can be installed from the npm repository.
 
-`npm install node-network-service-discover`
+`npm install network-service-discover`
 
 
 ## Code Example
