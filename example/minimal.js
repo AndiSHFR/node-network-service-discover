@@ -31,7 +31,7 @@ nsd.start(
     ],
 
     // Callback function called in case of an error.
-    error: funcion(err) {
+    error: function(err) {
       err && console.log(err);
     },
 
@@ -40,7 +40,7 @@ nsd.start(
       console.log(data);      
     }
   },
-  function(err) {
+  function(socket, err) {
     err && console.log(err);
   }
 );

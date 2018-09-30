@@ -6,7 +6,7 @@ A [Node.js](http://nodejs.org/) module to advertise and discover services runnin
 
 This project started because i had several microservices as Node.js applications and wanted them to _find_ each other without configuring the actual service entry point for their api on each application.
 
-Using IPv4 udp broacasts this module can adverstise and discover your services.
+Using IPv4 udp broadcasts this module can adverstise and discover your services.
 
 
 ## Installation
@@ -48,7 +48,7 @@ nsd.start(
     ],
 
     // Callback function called in case of an error.
-    error: funcion(err) {
+    error: function(err) {
       err && console.log(err);
     },
 
@@ -70,6 +70,15 @@ setInterval(
   60000
 );
 
+```
+
+## Debugging
+
+To enable debug output you need to set the `DEBUG` environment variable to _NetworkServiceDiscover_.
+
+```cmd
+SET DEBUG=NetworkServiceDiscover
+npm start
 ```
 
 ## License

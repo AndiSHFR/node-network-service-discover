@@ -106,7 +106,7 @@ function NetworkServiceDiscover() {
      * Send a broadcast packet on all IPv4 interface addresses to adverstise the services of this instance.
      */
     var _sendDatagram = function() {
-      if(!socket || 0 == opts.services.length) return;
+      if(!socket || 0 == opts.service.length) return;
       var
         data = {
           hostname: os.hostname(),
@@ -163,7 +163,7 @@ function NetworkServiceDiscover() {
             };
           }
         ),
-        serviceCount = service.length,
+        serviceCount = services.length,
         changed = false
         ;
     
@@ -203,7 +203,7 @@ function NetworkServiceDiscover() {
       opts = Object.assign({}, DEFAULTS, options);
 
       // We do not want to flood the local network with broadcasts!
-      if(opts.advertise < 5000) opts.advertise = 5000;
+      if(opts.advertise < 5) opts.advertise = 5;
       
       socket = dgram.createSocket('udp4');
   
