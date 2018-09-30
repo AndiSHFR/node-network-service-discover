@@ -1,17 +1,17 @@
 # node-network-service-discover
-A [Node.js](http://nodejs.org/) module to advertise and discover services running on your local network.
+A [Node.js](http://nodejs.org/) package to advertise and discover services running on your local network.
 
 
 ## Motivation
 
 This project started because i had several microservices as Node.js applications and wanted them to _find_ each other without configuring the actual service entry point for their api on each application.
 
-Using IPv4 udp broadcasts this module can adverstise and discover your services.
+Using IPv4 udp broadcasts this package can adverstise and discover your services.
 
 
 ## Installation
 
-This module can be installed from the npm repository.
+This package can be installed from the npm repository.
 
 `npm install node-network-service-discover`
 

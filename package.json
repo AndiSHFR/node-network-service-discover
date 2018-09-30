@@ -1,5 +1,5 @@
 {
-  "name": "node-network-service-discover",
+  "name": "network-service-discover",
   "version": "1.0.0",
   "description": "Node.js module to advertise and discover services running on your local network.",
   "main": "src/index.js",
