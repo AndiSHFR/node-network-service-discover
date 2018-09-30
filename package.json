@@ -1,0 +1,34 @@
+{
+  "name": "node-network-service-discover",
+  "version": "1.0.0",
+  "description": "Node.js module to advertise and discover services running on your local network.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development DEBUG=NetworkServiceDiscover node ./example/minimal.js"
+  },
+  "keywords": [
+    "network",
+    "discover",
+    "service",
+    "udp",
+    "broadcast"
+  ],
+  "author": "Andreas Schaefer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndiSHFR/node-network-service-discover.git"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0"
+  }
+}

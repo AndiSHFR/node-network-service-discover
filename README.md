@@ -48,7 +48,7 @@ nsd.start(
     ],
 
     // Callback function called in case of an error.
-    error: funcion(err) {
+    error: function(err) {
       err && console.log(err);
     },
 
@@ -70,6 +70,15 @@ setInterval(
   60000
 );
 
+```
+
+## Debugging
+
+To enable debug output you need to set the `DEBUG` environment variable to _NetworkServiceDiscover_.
+
+```cmd
+SET DEBUG=NetworkServiceDiscover
+npm start
 ```
 
 ## License
