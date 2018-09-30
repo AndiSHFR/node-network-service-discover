@@ -14,16 +14,16 @@ nsd.start(
     // Udp port to send and receive packets
     port: 7691,
 
-    // Send boradcast packet every 15 seconds.
+    // Send broadcast packet every 15 seconds.
     advertise: 15,
 
     // Remove services from the list when they have not been received for 60 seconds.
     purge: 60,
 
-    // A array of services we want to advertise on the network.
+    // Array of services we want to advertise on the network.
     //
     //  name   {string}   - Name of the service
-    //  port   {integer}  - Ip Port he service is listening on
+    //  port   {integer}  - Udp port the service listening on
     //  secure {bool}     - True if secured aka. SSL connection
     //  path   {string}   - Path for the RESTfull api
     service: [
