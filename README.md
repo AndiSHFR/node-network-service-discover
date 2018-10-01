@@ -23,7 +23,7 @@ For a minimal code example see [minimal.js](./example/minimal.js).
 Run this example on multiple computers on your local network.
 
 ```js
-var NetWorkServiceDiscover = require('network-service-discover');
+var NetworkServiceDiscover = require('network-service-discover');
 var nsd = NetworkServiceDiscover();
 
 nsd.start(
@@ -57,7 +57,7 @@ nsd.start(
       console.log(data);      
     }
   },
-  function(err) {
+  function(socket, err) {
     err && console.log(err);
   }
 );

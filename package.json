@@ -1,6 +1,6 @@
 {
   "name": "network-service-discover",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js module to advertise and discover services running on your local network.",
   "main": "src/index.js",
   "scripts": {
@@ -29,6 +29,7 @@
     "mocha": "^5.2.0"
   },
   "dependencies": {
-    "cross-env": "^5.2.0"
+    "cross-env": "^5.2.0",
+    "debug": "^4.0.1"
   }
 }
